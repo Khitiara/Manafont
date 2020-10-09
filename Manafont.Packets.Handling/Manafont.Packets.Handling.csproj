@@ -2,12 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Manafont.Db\Manafont.Db.csproj" />
       <ProjectReference Include="..\Manafont.Packets.IO\Manafont.Packets.IO.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Packets", "Manafont.Packets\Manafont.Packets.csproj", "{09788E93-30ED-410D-BCEB-82C6A8CF52DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Packets.IO", "Manafont.Packets.IO\Manafont.Packets.IO.csproj", "{09788E93-30ED-410D-BCEB-82C6A8CF52DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Config", "Manafont.Config\Manafont.Config.csproj", "{79D67C3A-8EA8-46D4-A870-FC15B297FD75}"
 EndProject
@@ -9,6 +9,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Web", "Manafont.Web\Manafont.Web.csproj", "{EC21280D-B1DA-4CD7-A430-B9008A603D6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Session", "Manafont.Session\Manafont.Session.csproj", "{40C14E12-6B41-4174-ADAF-51CA79A6D569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Packets.Handling", "Manafont.Packets.Handling\Manafont.Packets.Handling.csproj", "{37415AAB-AAF2-4988-9C3D-2ED1871FE922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Game.Client", "Manafont.Game.Client\Manafont.Game.Client.csproj", "{3DBCC686-1F5C-4A0A-B1D6-F1D4D2ED1845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Game.Server", "Manafont.Game.Server\Manafont.Game.Server.csproj", "{12810CE0-0DF0-496D-8DAB-7DE3AC1A6D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Game.Common", "Manafont.Game.Common\Manafont.Game.Common.csproj", "{7197693C-99CA-43F5-A00E-1CE2FA20D648}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +44,21 @@ Global
 		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37415AAB-AAF2-4988-9C3D-2ED1871FE922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37415AAB-AAF2-4988-9C3D-2ED1871FE922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37415AAB-AAF2-4988-9C3D-2ED1871FE922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37415AAB-AAF2-4988-9C3D-2ED1871FE922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DBCC686-1F5C-4A0A-B1D6-F1D4D2ED1845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBCC686-1F5C-4A0A-B1D6-F1D4D2ED1845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBCC686-1F5C-4A0A-B1D6-F1D4D2ED1845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBCC686-1F5C-4A0A-B1D6-F1D4D2ED1845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12810CE0-0DF0-496D-8DAB-7DE3AC1A6D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12810CE0-0DF0-496D-8DAB-7DE3AC1A6D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12810CE0-0DF0-496D-8DAB-7DE3AC1A6D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12810CE0-0DF0-496D-8DAB-7DE3AC1A6D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7197693C-99CA-43F5-A00E-1CE2FA20D648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7197693C-99CA-43F5-A00E-1CE2FA20D648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7197693C-99CA-43F5-A00E-1CE2FA20D648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7197693C-99CA-43F5-A00E-1CE2FA20D648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

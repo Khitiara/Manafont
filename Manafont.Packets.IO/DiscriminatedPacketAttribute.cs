@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Manafont.Packets
+namespace Manafont.Packets.IO
 {
     [AttributeUsage(AttributeTargets.Struct)]
     [Serializable]

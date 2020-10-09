@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AsyncBinaryExtensions;
 
-namespace Manafont.Packets
+namespace Manafont.Packets.IO
 {
     public static class NetworkStreamReadingExtensions
     {
