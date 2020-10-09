@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Packets", "Manafont.Packets\Manafont.Packets.csproj", "{09788E93-30ED-410D-BCEB-82C6A8CF52DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Config", "Manafont.Config\Manafont.Config.csproj", "{79D67C3A-8EA8-46D4-A870-FC15B297FD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Db", "Manafont.Db\Manafont.Db.csproj", "{81BE90F3-7B1B-4C71-9462-FCB977C290FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Web", "Manafont.Web\Manafont.Web.csproj", "{EC21280D-B1DA-4CD7-A430-B9008A603D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manafont.Session", "Manafont.Session\Manafont.Session.csproj", "{40C14E12-6B41-4174-ADAF-51CA79A6D569}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09788E93-30ED-410D-BCEB-82C6A8CF52DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09788E93-30ED-410D-BCEB-82C6A8CF52DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09788E93-30ED-410D-BCEB-82C6A8CF52DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09788E93-30ED-410D-BCEB-82C6A8CF52DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D67C3A-8EA8-46D4-A870-FC15B297FD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D67C3A-8EA8-46D4-A870-FC15B297FD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D67C3A-8EA8-46D4-A870-FC15B297FD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D67C3A-8EA8-46D4-A870-FC15B297FD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BE90F3-7B1B-4C71-9462-FCB977C290FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BE90F3-7B1B-4C71-9462-FCB977C290FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BE90F3-7B1B-4C71-9462-FCB977C290FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BE90F3-7B1B-4C71-9462-FCB977C290FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC21280D-B1DA-4CD7-A430-B9008A603D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC21280D-B1DA-4CD7-A430-B9008A603D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC21280D-B1DA-4CD7-A430-B9008A603D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC21280D-B1DA-4CD7-A430-B9008A603D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C14E12-6B41-4174-ADAF-51CA79A6D569}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
