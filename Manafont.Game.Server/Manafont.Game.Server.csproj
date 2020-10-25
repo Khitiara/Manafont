@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <UserSecretsId>dotnet-Manafont.Game.Server-1ADAA8A7-84E6-4484-A557-5AAEFEDF041E</UserSecretsId>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
@@ -14,5 +15,20 @@
       <ProjectReference Include="..\Manafont.Db\Manafont.Db.csproj" />
       <ProjectReference Include="..\Manafont.Game.Common\Manafont.Game.Common.csproj" />
       <ProjectReference Include="..\Manafont.Session\Manafont.Session.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 </Project>

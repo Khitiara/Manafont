@@ -27,7 +27,7 @@ namespace Manafont.Packets.Handling
             CancellationTokenSource linked =
                 CancellationTokenSource.CreateLinkedTokenSource(state.EndPacketProcessingToken, cancellationToken);
             await foreach (IPacket packet in packetIo.ReadPacketsAsync(state.Stream, linked.Token)) {
-                if (!handlers.TryGetValue(packet.PacketOpcode, out IPacketHandler<TState> handler)) {
+                if (!handlers.TryGetValue(packet.PacketOpcode, out IPacketHandler<TState>? handler)) {
                     continue;
                 }
 

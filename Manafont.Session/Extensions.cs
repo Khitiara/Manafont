@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Manafont.Packets.IO;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Manafont.Session
 {
@@ -6,6 +7,9 @@ namespace Manafont.Session
     {
         public static IServiceCollection AddManafontSession(this IServiceCollection services) {
             services.AddSingleton(sp => new ManafontSessionManager(sp));
+            services.AddPacketSerializer<AuthPacket, AuthPacketSerializer>();
+            services.AddPacketSerializer<SessionRevokedPacket, EmptyPacketSerializer<SessionRevokedPacket>>(
+                new EmptyPacketSerializer<SessionRevokedPacket>(SessionRevokedPacket.Opcode));
             return services;
         }
     }

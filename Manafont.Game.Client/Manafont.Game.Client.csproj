@@ -3,7 +3,12 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <UserSecretsId>dotnet-Manafont.GameClient-11F7F8C9-353C-40B1-8C87-7062A59416ED</UserSecretsId>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\Certs\client.pfx" Link="client.pfx" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0-rc.1.20451.14" />
@@ -15,5 +20,20 @@
       <ProjectReference Include="..\Manafont.Game.Common\Manafont.Game.Common.csproj" />
       <ProjectReference Include="..\Manafont.Packets.Handling\Manafont.Packets.Handling.csproj" />
       <ProjectReference Include="..\Manafont.Session\Manafont.Session.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 </Project>

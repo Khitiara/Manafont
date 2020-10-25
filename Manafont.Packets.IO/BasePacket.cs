@@ -1,7 +1,7 @@
 ﻿namespace Manafont.Packets.IO
 {
     public readonly struct BasePacket<T> : IPacket
-        where T : unmanaged
+        where T : struct
     {
         public BasePacket(ushort packetOpcode, T data) {
             PacketOpcode = packetOpcode;

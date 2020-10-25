@@ -6,7 +6,6 @@ using Manafont.Packets.IO;
 namespace Manafont.Packets.Handling
 {
     [StructLayout(LayoutKind.Sequential)]
-    [DiscriminatedPacket(Opcode)]
     public struct ClosingSessionPacket
     {
         public const ushort Opcode = 1;

@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using Manafont.Packets.IO;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Manafont.Packets.Handling
 {
@@ -18,8 +19,10 @@ namespace Manafont.Packets.Handling
 
         public static IServiceCollection AddPacketIo<TState>(this IServiceCollection services)
             where TState : BasicPacketState {
-            services.AddSingleton<PacketIo>();
-            services.AddSingleton<PacketHandlerManager<TState>>();
+            services.TryAddSingleton<PacketIo>();
+            services.TryAddSingleton<PacketHandlerManager<TState>>();
+            services.AddPacketSerializer<ClosingSessionPacket, EmptyPacketSerializer<ClosingSessionPacket>>(
+                new EmptyPacketSerializer<ClosingSessionPacket>(ClosingSessionPacket.Opcode));
             return services;
         }
     }

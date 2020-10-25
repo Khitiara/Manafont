@@ -1,8 +1,10 @@
-﻿using System;
+﻿using System.IO;
 using Manafont.Packets.Handling;
 
 namespace Manafont.Game.Common
 {
-    public class ManafontGameClientContext : BasicPacketState
-    { }
+    public sealed class ManafontGameClientContext : BasicPacketState
+    {
+        public ManafontGameClientContext(Stream stream) : base(stream) { }
+    }
 }

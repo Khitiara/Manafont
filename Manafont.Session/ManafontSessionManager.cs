@@ -20,7 +20,7 @@ namespace Manafont.Session
             _serviceProvider = serviceProvider;
         }
 
-        public async Task<ManafontGameSession> VerifyCreateSessionAsync(string tokenId,
+        public async Task<ManafontGameSession> VerifyCreateSessionAsync(string ticket,
             CancellationToken cancellationToken = default) {
             using IServiceScope scope = _serviceProvider.CreateScope();
             IServiceProvider sp = scope.ServiceProvider;
@@ -29,27 +29,27 @@ namespace Manafont.Session
                 sp.GetRequiredService<OpenIddictTokenManager<OpenIddictEntityFrameworkCoreToken>>();
 
             OpenIddictEntityFrameworkCoreToken?
-                token = await tokenManager.FindByIdAsync(tokenId, cancellationToken);
+                token = await tokenManager.FindByIdAsync(ticket, cancellationToken);
             if (token is null) {
                 throw new SecurityException(
-                    $"Token {tokenId} is null!]");
+                    $"Token {ticket} is null!]");
             }
 
             if (!await tokenManager.HasStatusAsync(token,
                 OpenIddictConstants.Statuses.Valid, cancellationToken)) {
-                throw new SecurityException($"Token {tokenId} is invalid: " +
+                throw new SecurityException($"Token {ticket} is invalid: " +
                     await tokenManager.GetStatusAsync(token, cancellationToken));
             }
 
             string? subject = await tokenManager.GetSubjectAsync(token, cancellationToken);
             if (subject is null) {
-                throw new SecurityException($"Token {tokenId} has null subject!");
+                throw new SecurityException($"Token {ticket} has null subject!");
             }
 
             ManafontUser? manafontUser = await dbContext.Users.FindAsync(new object[] {subject},
                 cancellationToken);
             if (manafontUser is null) {
-                throw new SecurityException($"Token {tokenId} returned null user!");
+                throw new SecurityException($"Token {ticket} returned null user!");
             }
 
             if (manafontUser.GameSessions.Any()) {
